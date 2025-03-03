@@ -1,0 +1,3 @@
+livy=com.minda.iconnect.spark.config.LivyConf
+sparkApplication=com.minda.iconnect.spark.config.SparkApplication
+sparkJobsDistro=com.minda.iconnect.spark.config.SparkJobsDistro

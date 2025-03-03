@@ -1,0 +1,2 @@
+activemq-subscriber=com.minda.iconnect.pubsub.activemq.consumer.ActiveMQSubscriber
+activemq-publisher=com.minda.iconnect.pubsub.activemq.producer.AMQProducerComponent

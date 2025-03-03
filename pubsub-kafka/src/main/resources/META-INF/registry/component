@@ -1,0 +1,2 @@
+kafka-subscriber=com.minda.iconnect.kafka.subscriber.KafkaSubscriber
+kafka-publisher=com.minda.iconnect.kafka.producer.KafkaProducer

@@ -1,0 +1,2 @@
+quartz-publisher=com.minda.iconnect.pubsub.quartz.publisher.QuartzProducer
+quartz-subscriber=com.minda.iconnect.pubsub.quartz.subscriber.QuartzSubscriber

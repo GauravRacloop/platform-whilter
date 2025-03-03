@@ -1,0 +1,25 @@
+package com.minda.iconnect.iql;
+
+public enum Condition {
+    IN,
+    ENUMERATED,
+    EXCLUSION_LIST,
+    BETWEEN,
+    NOT_BETWEEN,
+    STARTS_WITH,
+    DOESNT_STARTS_WITH,
+    ENDS_WITH,
+    DOESNT_ENDS_WITH,
+    CONTAIN,
+    DOESNT_CONTAIN,
+    MATCHES,
+    NOT_MATCHES,
+    EQUALS,
+    NOT_EQUALS,
+    GREATER_THAN,
+    GREATER_THAN_OR_EQUALS,
+    LESSER_THAN,
+    LESSER_THAN_OR_EQUALS,
+    EXISTS,
+    NOT_EXISTS
+}

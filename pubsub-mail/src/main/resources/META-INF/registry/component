@@ -1,0 +1,2 @@
+mail-publisher=com.minda.iconnect.pubsub.mail.publisher.MailProducer
+mail-subscriber=com.minda.iconnect.pubsub.mail.subscriber.MailSubscriber

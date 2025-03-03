@@ -1,0 +1,11 @@
+httpserver=com.whilter.conf.HTTPServer
+server=com.whilter.conf.Server
+service=com.whilter.conf.ServiceConf
+properties=com.whilter.conf.SimpleConf
+rdbms=com.whilter.rdbms.RDBMS
+global=com.whilter.conf.GlobalConf
+security=com.whilter.conf.SecurityConf
+gis=com.whilter.conf.GISConf
+active=com.whilter.conf.Active
+pubsub=com.whilter.pubsub.PubsubEndpoint
+cache=com.whilter.cache.CacheConfig

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+<!--    <scm>-->
+<!--        <connection>scm:git:mindaiconnect@vs-ssh.visualstudio.com:v3/mindaiconnect/iconnect/platform-iconnect</connection>-->
+<!--        <developerConnection>scm:git:mindaiconnect@vs-ssh.visualstudio.com:v3/mindaiconnect/iconnect/platform-iconnect</developerConnection>-->
+<!--        <url>https://mindaiconnect.visualstudio.com/iconnect/_git/platform-iconnect</url>-->
+<!--        <tag>HEAD</tag>-->
+<!--    </scm>-->
+
+    <modules>
+<!--        <module>platform-bom</module>-->
+<!--        <module>platform</module>-->
+<!--        <module>pubsub-kafka</module>-->
+<!--        <module>pubsub-activemq</module>
+        <module>jaxrs-jersey</module>
+        <module>elasticsearch</module>
+        <module>config-inject-plugin</module>
+        <module>mongo</module>
+        <module>azure-object-storage</module>
+        <module>google-gis</module>
+        <module>pubsub-eventhubs</module>
+        <module>pubsub-quartz</module>
+        <module>pubsub-mail</module>
+        <module>event-sourcing</module>
+        <module>pubsub-sftp</module>
+        <module>saga</module>
+        <module>spark</module>
+        <module>filereader-excel</module>
+        <module>filereader-delimited</module>-->
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.4</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <spring-cloud.version>2023.0.2</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <groupId>com.whilter</groupId>
+    <artifactId>platform-whilter</artifactId>
+    <version>0.0.01-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+
+
+
+
+</project>

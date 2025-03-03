@@ -1,0 +1,3 @@
+eventhubs-subscriber=com.minda.iconnect.pubsub.eventhubs.EventHubsSubscriber
+eventhubs-publisher=com.minda.iconnect.pubsub.eventhubs.EventHubsProducer
+iothubs-publisher=com.minda.iconnect.pubsub.eventhubs.IoTHubsProducer

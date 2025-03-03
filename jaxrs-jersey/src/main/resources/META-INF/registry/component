@@ -1,0 +1,2 @@
+jersey-client=com.minda.iconnect.jaxrs.jersey.client.JerseyClientComponent
+jersey-server=com.minda.iconnect.jaxrs.jersey.server.JerseyServerComponent

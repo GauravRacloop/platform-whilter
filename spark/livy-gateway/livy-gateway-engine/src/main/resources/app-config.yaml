@@ -1,0 +1,47 @@
+sparkJobsDistro:
+  - id: spark-distribution
+    groupId: com.minda.iconnect.spark.jobs
+    version: 0.1.5-SNAPSHOT
+    artifactId: spark-jobs-distro
+    localFsPath: ${SPARK_JOB_LD}
+    hdfsFsPath: /spark-jobs/libs/
+
+service:
+  - id: livy-gateway
+    servers: ["http://localhost:8080"]
+    loadBalancer: "http://localhost:8080"
+
+livy:
+  - id: iconnect-livy-conf
+    scheme: http
+    context:
+    port: 8998
+    host: localhost
+    batchPurgeInterval: 1000
+
+sparkApplication:
+  - id: simple-spark-application
+    name: simple-spark-application
+    driverMemory: 4G
+    driverCores: 4
+    executorMemory: 4G
+    executorCores: 2
+    numExecutors: 10
+    queue: simple
+    heartbeatTimeoutInSecond: 30
+    kind: spark
+    jobType: INTERACTIVE
+    jobs: [driving-score]
+
+  - id: batch-spark-application
+    name: batch-spark-application
+    driverMemory: 4G
+    driverCores: 4
+    executorMemory: 4G
+    executorCores: 2
+    numExecutors: 10
+    queue: simple
+    heartbeatTimeoutInSecond: 30
+    kind: spark
+    jobType: BATCH
+    jobs: [driving-batch]

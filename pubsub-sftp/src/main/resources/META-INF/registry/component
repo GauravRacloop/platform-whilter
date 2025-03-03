@@ -1,0 +1,2 @@
+sftp-publisher=com.minda.iconnect.pubsub.sftp.publisher.SftpProducer
+sftp-subscriber=com.minda.iconnect.pubsub.sftp.subscriber.SftpSubscriber
