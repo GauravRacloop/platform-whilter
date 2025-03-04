@@ -24,10 +24,10 @@ public class JsonSerializerFactory implements SerializerFactory {
         return new JsonSerializer(serializableClass);
     }
 
-    public static void main(String[] args) {
-        JsonSerializer<HashMap> stringJsonSerializer = new JsonSerializer<>(HashMap.class);
-        System.out.println(stringJsonSerializer.deserialize(stringJsonSerializer.serialize(new HashMap())));
-    }
+//    public static void main(String[] args) {
+//        JsonSerializer<HashMap> stringJsonSerializer = new JsonSerializer<>(HashMap.class);
+//        System.out.println(stringJsonSerializer.deserialize(stringJsonSerializer.serialize(new HashMap())));
+//    }
 
     public static class JsonSerializer<T extends Serializable> implements Serializer<T> {
         private final ThreadLocal<ObjectMapper> objectMapperThreadLocal = ThreadLocal.withInitial(ObjectMapper::new);

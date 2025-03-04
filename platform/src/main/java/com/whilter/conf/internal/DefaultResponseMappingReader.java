@@ -134,8 +134,8 @@ public class DefaultResponseMappingReader implements ResponseMappingReader {
         return null;
     }
 
-    public static void main(String[] args) {
-        new DefaultResponseMappingReader().readResponseCode("U404");
-    }
+//    public static void main(String[] args) {
+//        new DefaultResponseMappingReader().readResponseCode("U404");
+//    }
 
 }

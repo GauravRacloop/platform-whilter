@@ -6,9 +6,9 @@ import com.whilter.Bootstrap;
 
 public class Runner {
 
-    public static void main(String[] args) throws Exception {
-        run(args, true);
-    }
+//    public static void main(String[] args) throws Exception {
+//        run(args, true);
+//    }
 
     public static void run(String[] argv, boolean join) throws Exception {
         Args args = new Args();

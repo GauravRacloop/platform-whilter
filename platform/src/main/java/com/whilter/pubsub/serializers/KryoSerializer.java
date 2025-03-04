@@ -99,10 +99,10 @@ public class KryoSerializer<T extends Serializable> implements Serializer<T>, Se
         }
     }
 
-    public static void main(String[] args) {
-        KryoSerializer<Serializable> asd = new KryoSerializer<>();
-        for (int i = 0; i < 10; i++) {
-            new Thread(() -> System.out.println(asd.deserialize(asd.serialize("minku")))).start();
-        }
-    }
+//    public static void main(String[] args) {
+//        KryoSerializer<Serializable> asd = new KryoSerializer<>();
+//        for (int i = 0; i < 10; i++) {
+//            new Thread(() -> System.out.println(asd.deserialize(asd.serialize("minku")))).start();
+//        }
+//    }
 }
