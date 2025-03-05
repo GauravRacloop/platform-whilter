@@ -1,11 +1,12 @@
-package com.minda.iconnect.kafka;
+package com.whilter;
 
-import com.minda.iconnect.platform.conf.ConfArray;
-import com.minda.iconnect.platform.pubsub.PubsubConfiguration;
+//import com.minda.iconnect.platform.conf.ConfArray;
+//import com.minda.iconnect.platform.pubsub.PubsubConfiguration;
 
-/**
- * Created by deepakchauhan on 09/07/17.
- */
+import com.whilter.conf.ConfArray;
+import com.whilter.pubsub.PubsubConfiguration;
+
+
 @ConfArray(KafkaConf[].class)
 public class KafkaConf extends PubsubConfiguration {
 

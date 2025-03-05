@@ -1,10 +1,12 @@
-package com.minda.iconnect.kafka.producer;
+package com.whilter.producer;
 
-import com.minda.iconnect.platform.core.internal.AbstractComponent;
-import com.minda.iconnect.platform.pubsub.Producer;
-import com.minda.iconnect.platform.pubsub.ProducerComponent;
-import com.minda.iconnect.platform.pubsub.ProducerEndpoint;
-import com.minda.iconnect.platform.pubsub.ProducerRoute;
+
+
+import com.whilter.core.internal.AbstractComponent;
+import com.whilter.pubsub.Producer;
+import com.whilter.pubsub.ProducerComponent;
+import com.whilter.pubsub.ProducerEndpoint;
+import com.whilter.pubsub.ProducerRoute;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,7 +20,8 @@ public class KafkaProducer extends AbstractComponent<ProducerEndpoint, Producer>
 
     @Override
     protected Producer doGet(ProducerEndpoint endpoint) {
-        return new KafkaProducerService(endpoint);
+        return new
+                KafkaProducerService(endpoint);
     }
 
     @Override

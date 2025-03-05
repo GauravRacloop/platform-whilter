@@ -12,7 +12,7 @@
     <modules>
 <!--        <module>platform-bom</module>-->
         <module>platform</module>
-<!--        <module>pubsub-kafka</module>-->
+        <module>pubsub-kafka</module>
 <!--        <module>pubsub-activemq</module>
         <module>jaxrs-jersey</module>
         <module>elasticsearch</module>
@@ -48,7 +48,6 @@
     <groupId>com.whilter</groupId>
     <artifactId>platform-whilter</artifactId>
     <version>0.0.01-SNAPSHOT</version>
-
     <packaging>pom</packaging>
 
 

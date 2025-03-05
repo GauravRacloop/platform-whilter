@@ -1,12 +1,17 @@
-package com.minda.iconnect.kafka.subscriber;
+package com.whilter.subscriber;
 
-import com.minda.iconnect.kafka.KafkaConf;
-import com.minda.iconnect.platform.core.PlatformContext;
-import com.minda.iconnect.platform.core.internal.AbstractService;
-import com.minda.iconnect.platform.pubsub.*;
-import com.minda.iconnect.platform.pubsub.Consumer;
-import com.minda.iconnect.platform.util.NetworkUtil;
+//import com.minda.iconnect.platform.core.PlatformContext;
+//import com.minda.iconnect.platform.core.internal.AbstractService;
+//import com.minda.iconnect.platform.pubsub.*;
+//import com.minda.iconnect.platform.pubsub.Consumer;
+//import com.minda.iconnect.platform.util.NetworkUtil;
+import com.whilter.KafkaConf;
+import com.whilter.pubsub.*;
+import com.whilter.pubsub.Consumer;
+import com.whilter.core.internal.AbstractService;
+import com.whilter.core.PlatformContext;
 import org.apache.kafka.clients.consumer.*;
+import com.whilter.util.NetworkUtil;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.errors.WakeupException;
 import org.apache.kafka.common.serialization.ByteArrayDeserializer;

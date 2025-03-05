@@ -1,10 +1,16 @@
-package com.minda.iconnect.kafka.producer;
+package com.whilter.producer;
 
-import com.minda.iconnect.kafka.KafkaConf;
-import com.minda.iconnect.platform.core.internal.AbstractService;
-import com.minda.iconnect.platform.pubsub.*;
-import com.minda.iconnect.platform.pubsub.Producer;
-import com.minda.iconnect.platform.util.NetworkUtil;
+//import com.minda.iconnect.kafka.KafkaConf;
+//import com.minda.iconnect.platform.core.internal.AbstractService;
+//import com.minda.iconnect.platform.pubsub.*;
+//import com.minda.iconnect.platform.pubsub.Producer;
+//import com.minda.iconnect.platform.util.NetworkUtil;
+import com.whilter.KafkaConf;
+import com.whilter.core.internal.AbstractService;
+import com.whilter.pubsub.*;
+import com.whilter.pubsub.ProducerRoute;
+import com.whilter.pubsub.Producer;
+import com.whilter.util.NetworkUtil;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.common.serialization.ByteArraySerializer;
@@ -14,12 +20,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
-import java.net.SocketException;
 import java.net.UnknownHostException;
-import java.security.SecureRandom;
 import java.util.Collection;
 import java.util.Properties;
-import java.util.Random;
 import java.util.stream.Stream;
 
 /**
