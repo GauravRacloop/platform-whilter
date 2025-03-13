@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+            <!--<springProfile name="default">
+                <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+                <root level="INFO">
+                    <appender-ref ref="CONSOLE"/>
+                </root>
+            </springProfile>-->
+
+    <springProfile name="default">
+
+        <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>/disk2/logs/${DEPLOYMENT}/${HOSTNAME}.log</file>
+
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <fileNamePattern>/disk2/compress/${DEPLOYMENT}/%d{yyyy-MM-dd}/${HOSTNAME}.log.%i.gz</fileNamePattern>
+                <!-- each archived file, size max 10MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- total size of all archive files, if total size > 20GB,
+                    it will delete old archived file -->
+                <!--                <totalSizeCap>20GB</totalSizeCap>-->
+                <!--                &lt;!&ndash; 60 days to keep &ndash;&gt;-->
+                <!--                <maxHistory>60</maxHistory>-->
+            </rollingPolicy>
+
+            <encoder>
+                <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </encoder>
+        </appender>
+
+        <logger name="com.minda.carot.v3" level="INFO"/>
+        <root level="error">
+            <appender-ref ref="FILE-ROLLING"/>
+        </root>
+    </springProfile>
+
+</configuration>

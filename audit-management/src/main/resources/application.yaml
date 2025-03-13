@@ -1,0 +1,27 @@
+server:
+  port: 7002
+
+spring:
+  kafka:
+#    bootstrap-servers: ${KAFKA_HOST:10.10.26.19}:${KAFKA_PORT:9092}
+    bootstrap-servers: ${KAFKA_HOST:10.17.0.4}:${KAFKA_PORT:9092}
+#    bootstrap-servers: ${KAFKA_HOST:10.40.0.78}:${KAFKA_PORT:9092}
+#    bootstrap-servers: ${KAFKA_HOST:10.56.2.5}:${KAFKA_PORT:9092}
+  data:
+    mongodb:
+#      uri: ${MONGO_URL:mongodb://carotProdDBAdmin:324a596urd@10.10.28.17:27017/iconnect_prod}
+      uri: ${MONGO_URL:mongodb://tkmDBAdmin:ZAZOFqIk0jM=@10.17.0.7:27017/iconnect_prod}
+#      uri: ${MONGO_URL:mongodb://admin:Password%40123@10.40.0.73:27017/admin}
+#      uri: ${MONGO_URL:mongodb://qaDBAdmin:Password%40123@10.56.2.4:27017/iconnect_prod}
+  jpa:
+    properties:
+      hibernate:
+        auto_quote_keyword: true
+
+application:
+  audit:
+    period: 2
+  topic:
+    audit:
+      queue: audit-queue-dev
+      group-id: audit-queue-dev
