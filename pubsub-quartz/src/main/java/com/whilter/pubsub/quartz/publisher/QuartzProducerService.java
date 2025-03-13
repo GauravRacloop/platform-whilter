@@ -1,16 +1,16 @@
-package com.minda.iconnect.pubsub.quartz.publisher;
+package com.whilter.pubsub.quartz.publisher;
 
-import com.minda.iconnect.platform.core.PlatformContext;
-import com.minda.iconnect.platform.core.internal.AbstractService;
-import com.minda.iconnect.platform.pubsub.Producer;
-import com.minda.iconnect.platform.pubsub.ProducerEndpoint;
-import com.minda.iconnect.platform.pubsub.ProducerRoute;
-import com.minda.iconnect.platform.pubsub.Serializer;
-import com.minda.iconnect.platform.rdbms.RDBMS;
-import com.minda.iconnect.pubsub.quartz.QuartzConf;
-import com.minda.iconnect.pubsub.quartz.constants.QuartzConstants;
-import com.minda.iconnect.pubsub.quartz.ds.ConnectionProviderImpl;
-import com.minda.iconnect.pubsub.quartz.job.SimpleJob;
+import com.whilter.core.PlatformContext;
+import com.whilter.core.internal.AbstractService;
+import com.whilter.pubsub.Producer;
+import com.whilter.pubsub.ProducerEndpoint;
+import com.whilter.pubsub.ProducerRoute;
+import com.whilter.pubsub.Serializer;
+import com.whilter.rdbms.RDBMS;
+import com.whilter.pubsub.quartz.QuartzConf;
+import com.whilter.pubsub.quartz.constants.QuartzConstants;
+import com.whilter.pubsub.quartz.ds.ConnectionProviderImpl;
+import com.whilter.pubsub.quartz.job.SimpleJob;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.quartz.impl.jdbcjobstore.JobStoreTX;
@@ -25,9 +25,7 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.stream.Stream;
 
-/**
- * Created by mayank on 10/08/18 6:13 PM.
- */
+
 public class QuartzProducerService extends AbstractService implements Producer, QuartzConstants {
 
     private final Collection<Scheduler> schedulers;

@@ -1,19 +1,13 @@
-package com.minda.iconnect.pubsub.quartz.job;
+package com.whilter.pubsub.quartz.job;
 
-import com.minda.iconnect.platform.pubsub.Consumer;
-import com.minda.iconnect.platform.pubsub.Serializer;
-import com.minda.iconnect.platform.pubsub.SimpleConsumer;
+import com.whilter.pubsub.Consumer;
+import com.whilter.pubsub.Serializer;
+import com.whilter.pubsub.SimpleConsumer;
 import org.quartz.Job;
 import org.quartz.Scheduler;
-import org.quartz.SchedulerException;
 import org.quartz.spi.JobFactory;
 import org.quartz.spi.TriggerFiredBundle;
 
-import java.util.Collection;
-
-/**
- * Created by mayank on 13/08/18 1:53 PM.
- */
 public class QuartzJobFactory implements JobFactory {
 
     private final SimpleConsumer consumer;

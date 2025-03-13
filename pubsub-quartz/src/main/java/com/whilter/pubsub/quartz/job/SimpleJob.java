@@ -1,18 +1,12 @@
-package com.minda.iconnect.pubsub.quartz.job;
+package com.whilter.pubsub.quartz.job;
 
-import com.minda.iconnect.platform.pubsub.Consumer;
-import com.minda.iconnect.platform.pubsub.Serializer;
-import com.minda.iconnect.platform.pubsub.SimpleConsumer;
-import com.minda.iconnect.pubsub.quartz.constants.QuartzConstants;
+import com.whilter.pubsub.Serializer;
+import com.whilter.pubsub.SimpleConsumer;
+import com.whilter.pubsub.quartz.constants.QuartzConstants;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
 
-import java.util.Collection;
 
-/**
- * Created by mayank on 13/08/18 1:53 PM.
- */
 public class SimpleJob implements Job, QuartzConstants {
 
     private final SimpleConsumer consumer;

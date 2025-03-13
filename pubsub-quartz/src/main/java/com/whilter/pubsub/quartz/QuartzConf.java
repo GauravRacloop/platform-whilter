@@ -1,12 +1,10 @@
-package com.minda.iconnect.pubsub.quartz;
+package com.whilter.pubsub.quartz;
 
-import com.minda.iconnect.platform.conf.ConfArray;
-import com.minda.iconnect.platform.pubsub.PubsubConfiguration;
-import com.minda.iconnect.platform.rdbms.RDBMS;
+import com.whilter.conf.ConfArray;
+import com.whilter.pubsub.PubsubConfiguration;
+import com.whilter.rdbms.RDBMS;
 
-/**
- * Created by mayank on 10/08/18 6:08 PM.
- */
+
 @ConfArray(QuartzConf[].class)
 public class QuartzConf extends PubsubConfiguration {
     private RDBMS rdbms;

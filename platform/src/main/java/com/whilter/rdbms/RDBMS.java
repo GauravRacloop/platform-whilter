@@ -4,9 +4,7 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 import com.whilter.conf.ConfArray;
 import com.whilter.conf.internal.AbstractConfiguration;
 
-/**
- * Created by deepakchauhan on 23/07/17.
- */
+
 @JsonRootName("rdbms")
 @ConfArray(RDBMS[].class)
 public class RDBMS extends AbstractConfiguration {

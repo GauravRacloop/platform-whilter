@@ -1,4 +1,4 @@
-package com.minda.iconnect.pubsub.quartz.ds;
+package com.whilter.pubsub.quartz.ds;
 
 import org.quartz.utils.ConnectionProvider;
 

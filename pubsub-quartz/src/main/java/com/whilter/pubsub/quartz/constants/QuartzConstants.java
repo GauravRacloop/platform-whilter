@@ -1,4 +1,4 @@
-package com.minda.iconnect.pubsub.quartz.constants;
+package com.whilter.pubsub.quartz.constants;
 
 /**
  * Created by mayank on 13/08/18 5:39 PM.

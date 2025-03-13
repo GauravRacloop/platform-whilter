@@ -1,1 +1,1 @@
-quartz=com.minda.iconnect.pubsub.quartz.QuartzConf
+quartz=com.whilter.pubsub.quartz.QuartzConf
